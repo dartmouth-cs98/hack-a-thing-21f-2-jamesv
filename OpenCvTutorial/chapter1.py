@@ -8,8 +8,7 @@ cv2.waitKey(0)
 frameWidth = 640
 frameHeight = 480
 
-# Could not find the resource video so commented out
-"""
+
 cap = cv2.VideoCapture("Resources/test_video.mp4")
 while True:
     success, img = cap.read()
@@ -18,7 +17,6 @@ while True:
 
     if cv2.waitKey(1) and 0xFF == ord('q'):
         break
-"""
 
 # might need to run once to give permission and then run again
 cap = cv2.VideoCapture(0)
