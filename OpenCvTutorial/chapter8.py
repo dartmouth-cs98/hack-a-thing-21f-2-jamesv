@@ -67,7 +67,9 @@ def getContours(img):
                 objectType = "None"
 
             cv2.rectangle(imgContour, (x, y), (x + w, y + h), (0, 255, 0), 2)
-            cv2.putText(imgContour, objectType, (x + (w // 2) - 10, y + (h // 2) - 10, cv2.FONT_HERSHEY_COMPLEX, .7, (0, 0, 0), 2))
+            cv2.putText(imgContour, objectType,
+                        (x + (w // 2) - 10, y + (h // 2) - 10), cv2.FONT_HERSHEY_COMPLEX, .7,
+                        (0, 0, 0), 2)
 
 
 path = 'Resources/shapes.png'
